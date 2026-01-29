@@ -1,2 +1,3 @@
 android-sdk/
 __pycache__
+resources/.secrets.yaml

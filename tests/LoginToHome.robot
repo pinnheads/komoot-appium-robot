@@ -2,12 +2,14 @@
 Documentation       Simple test for login and going through onboarding wizard
 
 Resource            resources/common.resource
-Resource            pages/login_page.resource
+
+Test Tags           login
 
 
 *** Test Cases ***
-User Logs In And Skips Onboarding
-    [Documentation]    Log in skip the onboarding feature demos
+User Logs In And Goes Through Onboarding
+    [Documentation]    Log in and go through the onboarding feature demos
+    [Tags]    onboarding
     Open Test Application
     Accept Cookies And Continue
     Perform Login

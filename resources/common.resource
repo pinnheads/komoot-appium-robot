@@ -1,7 +1,9 @@
 *** Settings ***
 Documentation       Contains variables and keywords that are common to all tests
 
-Library             AppiumLibrary    run_on_failure=AppiumLibrary.Capture Page Screenshot
+Resource            pages/home_page.resource
+Resource            pages/login_page.resource
+Resource            pages/routes_page.resource
 
 
 *** Variables ***
@@ -30,4 +32,4 @@ Open Test Application
 Headline Text Is Visible
     [Documentation]    Tests if headline text is visible on the screen
     [Arguments]    ${text}
-    Expect Text    text=${text}    state=visible    message=${text} was not visible
+    Wait Until Page Contains    text=${text}

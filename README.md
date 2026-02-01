@@ -2,7 +2,9 @@
 
 This is a simple suite of tests for the Komoot Android Application for demo purposes.
 
-![Demo](./assets/2026-02-01 14-16-52.mp4)
+<video width="320" height="240" controls>
+  <source src="./assets/2026-02-01 14-16-52.mp4" type="video/mp4">
+</video>
 
 ## Requirements
 

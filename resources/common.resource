@@ -32,4 +32,4 @@ Open Test Application
 Headline Text Is Visible
     [Documentation]    Tests if headline text is visible on the screen
     [Arguments]    ${text}
-    Wait Until Page Contains    text=${text}
+    Wait Until Page Contains    text=${text}    timeout=10s

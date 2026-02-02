@@ -3,7 +3,7 @@ set -e
 # config
 VENV_PATH="./venv"
 APPIUM_CMD=appium
-WAIT_TIME=10
+WAIT_TIME=5
 LOG_FILE=./reports/appium.log
 TAGS_INPUT=$1
 ROBOT_TAGS=""
@@ -33,7 +33,6 @@ else
 fi
 
 echo "Running Robot tests...."
-echo ${ROBOT_TAGS}
 
 robot \
   ${ROBOT_TAGS} \
